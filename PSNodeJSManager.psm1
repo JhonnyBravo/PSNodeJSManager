@@ -6,6 +6,12 @@
 <#
 .SYNOPSIS
 Node.js をインストールします。
+
+.PARAMETER x32
+32 bit 版 Node.js をインストールします。
+
+.PARAMETER x64
+64 bit 版 Node.js をインストールします。
 #>
 function Install-NodeJS([switch]$x32,[switch]$x64){
     if($x32 -eq $false -and $x64 -eq $false){
